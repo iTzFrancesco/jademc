@@ -14,7 +14,7 @@ const Navbar = ({ serverName }) => {
         { name: 'Home', path: '/' },
         { name: 'Staff', path: '/staff' },
         { name: 'Regole', path: '/regole' },
-        { name: 'Store', path: '/store' },
+     {/*     { name: 'Store', path: '/store' },    Stats */}
     ];
 
     const toggleMenu = () => {

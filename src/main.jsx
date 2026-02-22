@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/" element={<><ScrollToTop /><Layout /></>}>
             <Route index element={<App />} />
             <Route path="staff" element={<Staff />} />
-            <Route path="store" element={<Store />} />
+          {/*  <Route path="store" element={<Store />} />s */} 
             <Route path="regole" element={<Regole />} />
           </Route>
         </Routes>
