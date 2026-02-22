@@ -1,12 +1,10 @@
 import React from 'react';
 import logo from '../assets/logo-server.png';
 import mcLogo from '../assets/logo-minecraft.svg';
-import skyGenIcon from '../assets/logo-infinityskygen.png';
-import smpIcon from '../assets/logo-lifestealsmp.png';
-import ffaIcon from '../assets/logo-server.png';
+import skyGenIcon from '../assets/logo-skygen.png';
 import mascot from '../assets/mascott-discord.png';
 
-const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, copyToClipboard, copied }) => {
+const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, modesMaxWidth = '52rem', copyToClipboard, copied }) => {
     return (
         <>
             {/* Header/Logo */}
@@ -87,29 +85,13 @@ const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, c
             </div>
 
             {/* Modalità */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full mb-32">
+            <div className="w-full mx-auto mb-32" style={{ maxWidth: modesMaxWidth }}>
                 <div className="mode-card group">
                     <div className="w-24 h-24 bg-white/5 backdrop-blur-md border border-ice-glow/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-ice-glow/50 transition-all duration-500 shadow-[0_0_20px_rgba(0,242,255,0.1)]">
                         <img src={skyGenIcon} alt="SkyGen Icon" className="w-20 h-20 object-contain drop-shadow-[0_0_10px_rgba(0,242,255,0.3)]" />
                     </div>
                     <h3 className="text-2xl font-bold mb-3 text-white">SkyGen</h3>
-                    <p className="text-ice-light/60 text-sm leading-relaxed">Non la solita SkyBlock! Crea la tua isola, potenzia i generatori e scala la classifica economica. Un gameplay veloce e addicting!</p>
-                </div>
-
-                <div className="mode-card group">
-                    <div className="w-24 h-24 bg-white/5 backdrop-blur-md border border-ice-glow/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-ice-glow/50 transition-all duration-500 shadow-[0_0_20px_rgba(0,242,255,0.1)]">
-                        <img src={smpIcon} alt="SMP Icon" className="w-20 h-20 object-contain drop-shadow-[0_0_10px_rgba(0,242,255,0.3)]" />
-                    </div>
-                    <h3 className="text-2xl font-bold mb-3 text-white">SMP</h3>
-                    <p className="text-ice-light/60 text-sm leading-relaxed">L'esperienza di sopravvivenza definitiva. Costruisci la tua base, fonda città con i tuoi amici e commercia in un'economia bilanciata.</p>
-                </div>
-
-                <div className="mode-card group">
-                    <div className="w-24 h-24 bg-white/5 backdrop-blur-md border border-ice-glow/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-ice-glow/50 transition-all duration-500 shadow-[0_0_20px_rgba(0,242,255,0.1)]">
-                        <img src={ffaIcon} alt="FFA Icon" className="w-20 h-20 object-contain drop-shadow-[0_0_10px_rgba(0,242,255,0.3)]" />
-                    </div>
-                    <h3 className="text-2xl font-bold mb-3 text-white">FFA</h3>
-                    <p className="text-ice-light/60 text-sm leading-relaxed">Vuoi riscaldarti un po'? Scendi nell'arena e dimostra la tua skill nel PvP. Niente squadre, solo tu contro tutti.</p>
+                    <p className="text-ice-light/60 text-s leading-relaxed">Non la solita SkyBlock! Crea la tua isola, potenzia i generatori e scala la classifica economica. Un gameplay veloce e addicting!</p>
                 </div>
             </div>
 

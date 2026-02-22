@@ -4,16 +4,11 @@ import { useAuth } from '../contexts/useAuth.js';
 import { tebexClient } from '../lib/tebexClient.js';
 
 // Importa le immagini
-import rankVip from '../assets/rank-vip.png';
-import rankVipPlus from '../assets/rank-vip-plus.png';
-import rankMvp from '../assets/rank-mvp.png';
-import rankMvpPlus from '../assets/rank-mvp-plus.png';
-import rankHero from '../assets/rank-hero.png';
-import key1 from '../assets/key-1.png';
-import key5 from '../assets/key-5.png';
-import key10 from '../assets/key-10.png';
-import key25 from '../assets/key-25.png';
-
+import rankVip from '../assets/logo-server.png';
+import rankVipPlus from '../assets/logo-server.png';
+import rankMvp from '../assets/logo-server.png';
+import rankMvpPlus from '../assets/logo-server.png';
+import rankHero from '../assets/logo-server.png';
 
 const modes = [
     { id: 'skygen', name: 'SkyGen' },
