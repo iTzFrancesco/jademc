@@ -31,11 +31,11 @@ function App() {
       }
 
       try {
-        const discordResponse = await fetch('https://discord.com/api/v9/invites/cU6x8t49B3?with_counts=true')
+        const discordResponse = await fetch('https://discord.com/api/guilds/1472205185618149396/widget.json')
         const discordData = await discordResponse.json()
-        if (discordData.approximate_presence_count) setDiscordOnline(discordData.approximate_presence_count)
+        if (discordData.presence_count !== undefined) setDiscordOnline(discordData.presence_count)
       } catch (err) {
-        console.error("Error fetching stats:", err)
+        console.error("Error fetching Discord stats:", err)
       }
     }
 
