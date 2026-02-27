@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const STORE_URL = 'https://store.icemc.it';
+const STORE_URL = 'https://store.jademc.fun';
 const STORE = "store.jademc.fun";
 
 const Store = () => {
