@@ -7,12 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'ice-dark': '#050b1a',
-        'ice-light': '#a5f3fc',
-        'ice-glow': '#00f2ff',
+        'jade-dark': '#051a0a',
+        'jade-light': '#a5f3dc',
+        'jade-glow': '#00ffa3',
       },
       backgroundImage: {
-        'frost-texture': "url('/src/assets/frost.png')",
+        'jade-texture': "url('/src/assets/frost.png')",
       },
       animation: {
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',

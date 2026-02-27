@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 
 const STORE_URL = 'https://store.icemc.it';
+const STORE = "store.jademc.fun";
 
 const Store = () => {
   const [blocked, setBlocked] = useState(false);
@@ -14,16 +15,16 @@ const Store = () => {
 
   return (
     <div className="py-20 px-4 text-center">
-      <p className="text-ice-light/80">
+      <p className="text-jade-light/80">
         {blocked ? 'Popup bloccato. Apri lo store dal link qui sotto.' : 'Store aperto in una nuova scheda.'}
       </p>
       <a
         href={STORE_URL}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-block mt-4 text-ice-glow underline"
+        className="inline-block mt-4 text-jade-glow underline"
       >
-        Apri store.icemc.it
+        Apri {STORE}
       </a>
     </div>
   );

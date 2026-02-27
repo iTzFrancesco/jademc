@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo-server.png';
 import mcLogo from '../assets/logo-minecraft.svg';
-import skyGenIcon from '../assets/logo-skygen.png';
+import smpIcon from '../assets/logo-smp.png';
 import mascot from '../assets/mascott-discord.png';
 
 const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, modesMaxWidth = '52rem', copyToClipboard, copied }) => {
@@ -9,35 +9,35 @@ const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, m
         <>
             {/* Header/Logo */}
             <div className="mb-12 animate-pulse-slow">
-                <img src={logo} alt={`${serverName} Logo`} className="w-64 md:w-80 drop-shadow-[0_0_30px_rgba(0,242,255,0.4)]" />
+                <img src={logo} alt={`${serverName} Logo`} className="w-64 md:w-80 drop-shadow-[0_0_30px_rgba(0,255,163,0.4)]" />
             </div>
 
             {/* Header / pages */}
             <div className="text-center mb-16 space-y-6 w-full">
                 <h1 className="text-4xl md:text-6xl font-black text-white tracking-tighter text-glow">
-                    Benvenuto su Ice<span className="text-ice-glow">MC</span>
+                    Benvenuto su Jade<span className="text-jade-glow">MC</span>
                 </h1>
-                <p className="text-lg md:text-xl text-ice-light/80 max-w-2xl mx-auto">
-                    L'esperienza definitiva di Minecraft a tema ghiaccio. Unisciti alla nostra community gelida ma accogliente!
+                <p className="text-lg md:text-xl text-jade-light/80 max-w-2xl mx-auto">
+                    L'esperienza definitiva di Minecraft a tema giada.<br /> Unisciti alla nostra community accogliente!
                 </p>
 
                 <div className="flex justify-center pt-4">
-                    <div className="glass-card !bg-ice-dark/40 backdrop-blur-xl border-ice-glow/30 p-1 md:p-1.5 rounded-2xl flex flex-col md:flex-row items-stretch gap-2 shadow-[0_0_40px_rgba(0,184,255,0.1)]">
+                    <div className="glass-card !bg-jade-dark/40 backdrop-blur-xl border-jade-glow/30 p-1 md:p-1.5 rounded-2xl flex flex-col md:flex-row items-stretch gap-2 shadow-[0_0_40px_rgba(0,255,163,0.1)]">
 
                         {/* Server IP */}
                         <div
-                            className="flex items-center justify-center gap-4 bg-ice-dark/60 hover:bg-ice-dark/80 transition-all duration-300 px-6 py-3 rounded-xl cursor-pointer border border-dashed border-white/10 group"
+                            className="flex items-center justify-center gap-4 bg-jade-dark/60 hover:bg-jade-dark/80 transition-all duration-300 px-6 py-3 rounded-xl cursor-pointer border border-dashed border-white/10 group"
                             onClick={copyToClipboard}
                         >
                             <div className="flex flex-col items-start leading-none">
-                                <span className="text-[10px] text-ice-light/40 uppercase font-black tracking-widest mb-1 text-left">Server IP</span>
+                                <span className="text-[10px] text-jade-light/40 uppercase font-black tracking-widest mb-1 text-left">Server IP</span>
                                 <span className="text-white font-mono text-xl">{serverIP}</span>
                             </div>
                             <div className="ml-2">
                                 {copied ? (
                                     <span className="text-green-400 font-bold animate-bounce text-sm">COPIATO!</span>
                                 ) : (
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-ice-glow/60 group-hover:text-ice-glow group-hover:rotate-12 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-jade-glow/60 group-hover:text-jade-glow group-hover:rotate-12 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
                                     </svg>
                                 )}
@@ -87,25 +87,25 @@ const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, m
             {/* Modalità */}
             <div className="w-full mx-auto mb-32" style={{ maxWidth: modesMaxWidth }}>
                 <div className="mode-card group">
-                    <div className="w-24 h-24 bg-white/5 backdrop-blur-md border border-ice-glow/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-ice-glow/50 transition-all duration-500 shadow-[0_0_20px_rgba(0,242,255,0.1)]">
-                        <img src={skyGenIcon} alt="SkyGen Icon" className="w-20 h-20 object-contain drop-shadow-[0_0_10px_rgba(0,242,255,0.3)]" />
+                    <div className="w-32 h-32 bg-white/5 backdrop-blur-md border border-jade-glow/20 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 group-hover:border-jade-glow/50 transition-all duration-500 shadow-[0_0_20px_rgba(0,255,163,0.1)]">
+                        <img src={smpIcon} alt="SMP Icon" className="w-28 h-28 object-contain drop-shadow-[0_0_10px_rgba(0,255,163,0.3)]" />
                     </div>
-                    <h3 className="text-2xl font-bold mb-3 text-white">SkyGen</h3>
-                    <p className="text-ice-light/60 text-s leading-relaxed">Non la solita SkyBlock! Crea la tua isola, potenzia i generatori e scala la classifica economica. Un gameplay veloce e addicting!</p>
+                    <h3 className="text-2xl font-bold mb-3 text-white">SMP</h3>
+                    <p className="text-jade-light/60 text-s leading-relaxed">Sopravvivi, costruisci e collabora! Un'esperienza Survival Multiplayer con feature custom, economia, ranks e una community attiva. Esplora, commercia e conquista il mondo insieme!</p>
                 </div>
             </div>
 
             {/* Discord Box */}
             <div className="w-full relative group mb-32">
-                <div className="wavy-container border border-ice-glow/20 overflow-hidden transition-all duration-500 rounded-[2.5rem] shadow-[0_0_60px_rgba(0,184,255,0.1)] bg-ice-dark/40 backdrop-blur-md">
+                <div className="wavy-container border border-jade-glow/20 overflow-hidden transition-all duration-500 rounded-[2.5rem] shadow-[0_0_60px_rgba(0,255,163,0.1)] bg-jade-dark/40 backdrop-blur-md">
                     <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 px-8 md:px-20 py-16">
 
                         <div className="relative w-48 h-48 md:w-64 md:h-64 hover:scale-105 transition-transform duration-500">
-                            <div className="absolute inset-0 bg-ice-glow/20 blur-[50px] rounded-full animate-pulse-slow"></div>
+                            <div className="absolute inset-0 bg-jade-glow/20 blur-[50px] rounded-full animate-pulse-slow"></div>
                             <img
                                 src={mascot}
                                 alt="Discord Mascot"
-                                className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_30px_rgba(0,184,255,0.4)]"
+                                className="relative z-10 w-full h-full object-contain drop-shadow-[0_0_30px_rgba(0,255,163,0.4)]"
                             />
                         </div>
 
@@ -119,7 +119,7 @@ const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, m
                                 <h2 className="text-3xl font-black uppercase tracking-tight text-white italic">Community</h2>
                             </div>
                             <p className="text-white/70 text-lg leading-relaxed max-w-lg">
-                                Unisciti a <span className="text-ice-glow font-bold">{discordOnline}</span> giocatori su Discord. Ricevi supporto, partecipa a eventi e scala i ranghi!
+                                Unisciti a <span className="text-jade-glow font-bold">{discordOnline}</span> giocatori su Discord. Ricevi supporto, partecipa a eventi e scala i ranghi!
                             </p>
                             <div className="pt-2">
                                 <a href={discordInvite} target="_blank" rel="noopener noreferrer" className="discord-button px-10 py-4 text-xl shadow-[0_0_30px_rgba(88,101,242,0.3)]">

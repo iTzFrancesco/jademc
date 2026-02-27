@@ -234,11 +234,11 @@ const Regole = () => {
             {/* Header */}
             <div className="mb-12">
                 <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter text-glow mb-6">
-                    Regolamento <span className="text-white">Ice</span><span className="text-ice-glow">MC</span>
+                    Regolamento <span className="text-white">Jade</span><span className="text-jade-glow">MC</span>
                 </h1>
                 <div className="flex items-center justify-center gap-4 mb-8">
-                    <div className="w-16 h-1 bg-gradient-to-r from-transparent via-ice-glow to-transparent rounded-full"></div>
-                    <div className="w-16 h-1 bg-gradient-to-r from-transparent via-ice-glow to-transparent rounded-full"></div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-transparent via-jade-glow to-transparent rounded-full"></div>
+                    <div className="w-16 h-1 bg-gradient-to-r from-transparent via-jade-glow to-transparent rounded-full"></div>
                 </div>
             </div>
 
@@ -246,27 +246,25 @@ const Regole = () => {
             <div className="flex justify-center gap-4 mb-12">
                 <button
                     onClick={() => setActiveTab('discord')}
-                    className={`px-8 py-4 rounded-2xl font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-3 ${
-                        activeTab === 'discord'
-                            ? 'bg-[#5865F2] text-white shadow-[0_0_30px_rgba(88,101,242,0.5)] scale-105'
-                            : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10'
-                    }`}
+                    className={`px-8 py-4 rounded-2xl font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-3 ${activeTab === 'discord'
+                        ? 'bg-[#5865F2] text-white shadow-[0_0_30px_rgba(88,101,242,0.5)] scale-105'
+                        : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10'
+                        }`}
                 >
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 11.756 11.756 0 0 0-.617-1.25.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.069.069 0 0 0-.032.027C.533 9.048-.32 13.579.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+                        <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 11.756 11.756 0 0 0-.617-1.25.077.077 0 0 0-.079-.037 19.736 19.736 0 0 0-4.885 1.515.069.069 0 0 0-.032.027C.533 9.048-.32 13.579.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" />
                     </svg>
                     Discord
                 </button>
                 <button
                     onClick={() => setActiveTab('minecraft')}
-                    className={`px-8 py-4 rounded-2xl font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-3 ${
-                        activeTab === 'minecraft'
-                            ? 'bg-green-500 text-white shadow-[0_0_30px_rgba(34,197,94,0.5)] scale-105'
-                            : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10'
-                    }`}
+                    className={`px-8 py-4 rounded-2xl font-bold uppercase tracking-wider transition-all duration-300 flex items-center gap-3 ${activeTab === 'minecraft'
+                        ? 'bg-green-500 text-white shadow-[0_0_30px_rgba(34,197,94,0.5)] scale-105'
+                        : 'bg-white/5 text-white/70 hover:bg-white/10 hover:text-white border border-white/10'
+                        }`}
                 >
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M4 2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm2 4v12h12V6H6zm2 2h2v2H8V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8z"/>
+                        <path d="M4 2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2V4a2 2 0 012-2zm2 4v12h12V6H6zm2 2h2v2H8V8zm4 0h2v2h-2V8zm4 0h2v2h-2V8z" />
                     </svg>
                     Minecraft
                 </button>
@@ -274,9 +272,9 @@ const Regole = () => {
 
             {/* Intro */}
             <div className="max-w-4xl mx-auto mb-16">
-                <div className="glass-card p-8 border-ice-glow/30 bg-gradient-to-br from-ice-glow/5 to-transparent">
-                    <p className="text-ice-light/80 text-lg leading-relaxed">
-                        {activeTab === 'discord' 
+                <div className="glass-card p-8 border-jade-glow/30 bg-gradient-to-br from-jade-glow/5 to-transparent">
+                    <p className="text-jade-light/80 text-lg leading-relaxed">
+                        {activeTab === 'discord'
                             ? "Tutti i membri sono invitati a leggere attentamente queste linee guida per evitare sanzioni. Il regolamento è soggetto ad aggiornamenti: la mancata visione non è una scusa per contestare le sanzioni. L'ignoranza delle regole non giustifica alcuna infrazione."
                             : "L'accesso al server comporta l'accettazione implicita del presente regolamento. Ogni azione all'interno del gioco è tracciata dai nostri log, la violazione del regolamento comporterà sanzioni che variano dal richiamo (warn) al ban permanente dal Network."
                         }
@@ -287,16 +285,16 @@ const Regole = () => {
             {/* Rule Sections */}
             <div className="max-w-5xl mx-auto space-y-8">
                 {activeSections.map((section, index) => (
-                    <div 
-                        key={index} 
-                        className={`glass-card p-8 text-left border-2 ${section.borderColor} hover:border-ice-glow/50 transition-all duration-500 group`}
+                    <div
+                        key={index}
+                        className={`glass-card p-8 text-left border-2 ${section.borderColor} hover:border-jade-glow/50 transition-all duration-500 group`}
                     >
                         <div className="flex flex-col md:flex-row gap-6">
                             {/* Icon */}
                             <div className={`${section.bgColor} ${section.color} w-16 h-16 rounded-2xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-300 shadow-[0_0_20px_rgba(0,242,255,0.1)] text-3xl`}>
                                 {section.icon}
                             </div>
-                            
+
                             {/* Content */}
                             <div className="flex-1">
                                 <h3 className={`text-2xl md:text-3xl font-bold ${section.color} mb-4 flex items-center gap-3`}>
@@ -305,7 +303,7 @@ const Regole = () => {
                                 </h3>
                                 <ul className="space-y-3">
                                     {section.rules.map((rule, ruleIndex) => (
-                                        <li key={ruleIndex} className="flex items-start gap-3 text-ice-light/70 leading-relaxed">
+                                        <li key={ruleIndex} className="flex items-start gap-3 text-jade-light/70 leading-relaxed">
                                             <span className={`${section.color} mt-1.5 text-xs`}>●</span>
                                             <span>{rule}</span>
                                         </li>
@@ -355,7 +353,7 @@ const Regole = () => {
                         <h3 className="text-xl font-bold text-[#5865F2] mb-4 flex items-center gap-3">
                             📝 NOTA
                         </h3>
-                        <ul className="space-y-2 text-ice-light/70 text-left">
+                        <ul className="space-y-2 text-jade-light/70 text-left">
                             <li>• Queste regole/sanzioni sono soggette a modifiche in qualsiasi momento, se necessario.</li>
                             <li>• Ignorare le regole o non conoscerle non ti renderà immune da esse.</li>
                             <li>• Entrando nel discord e interagendo con la community accetti automaticamente le regole.</li>
@@ -400,11 +398,11 @@ const Regole = () => {
                     </div>
 
                     {/* Note */}
-                    <div className="glass-card p-8 border-ice-glow/20 bg-gradient-to-br from-blue-500/5 to-transparent border-l-4 border-l-blue-400">
+                    <div className="glass-card p-8 border-jade-glow/20 bg-gradient-to-br from-blue-500/5 to-transparent border-l-4 border-l-blue-400">
                         <h3 className="text-xl font-bold text-blue-400 mb-4 flex items-center gap-3">
                             📝 NOTA
                         </h3>
-                        <ul className="space-y-2 text-ice-light/70 text-left">
+                        <ul className="space-y-2 text-jade-light/70 text-left">
                             <li>• Queste regole/sanzioni sono soggette a modifiche in qualsiasi momento, se necessario.</li>
                             <li>• Ignorare le regole o non conoscerle non ti renderà immune da esse.</li>
                             <li>• Entrando nel server minecraft accetti automaticamente le regole, la non lettura non è una scusa valida per non ricevere la sanzione se necessaria.</li>
@@ -418,14 +416,14 @@ const Regole = () => {
 
             {/* Footer Note */}
             <div className="max-w-4xl mx-auto mt-16">
-                <div className="glass-card p-8 border-ice-glow/20 bg-gradient-to-br from-red-500/5 to-transparent border-l-4 border-l-red-400">
+                <div className="glass-card p-8 border-jade-glow/20 bg-gradient-to-br from-red-500/5 to-transparent border-l-4 border-l-red-400">
                     <div className="flex items-start gap-4">
                         <div className="text-red-400 text-3xl"></div>
                         <div>
                             <h4 className="text-xl font-bold text-white mb-2">Nota Importante</h4>
-                            <p className="text-ice-light/60 leading-relaxed">
-                                Lo staff si riserva il diritto di allontanare chiunque sia ritenuto dannoso per la community. 
-                                L'ultima parola spetta ai membri dello Staff. In caso di controversie gravi con un membro dello Staff, 
+                            <p className="text-jade-light/60 leading-relaxed">
+                                Lo staff si riserva il diritto di allontanare chiunque sia ritenuto dannoso per la community.
+                                L'ultima parola spetta ai membri dello Staff. In caso di controversie gravi con un membro dello Staff,
                                 apri un ticket Headstaff o contatta privatamente se il problema è MOLTO grave.
                             </p>
                         </div>
@@ -435,9 +433,9 @@ const Regole = () => {
 
             {/* Bottom decoration */}
             <div className="flex items-center justify-center gap-4 mt-16">
-                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-ice-glow/50 to-transparent rounded-full"></div>
-                <span className="text-ice-glow/50 text-2xl"></span>
-                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-ice-glow/50 to-transparent rounded-full"></div>
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-jade-glow/50 to-transparent rounded-full"></div>
+                <span className="text-jade-glow/50 text-2xl"></span>
+                <div className="w-24 h-1 bg-gradient-to-r from-transparent via-jade-glow/50 to-transparent rounded-full"></div>
             </div>
         </div>
     );

@@ -36,10 +36,10 @@ const Staff = ({ serverName }) => {
     return (
         <div className="text-center py-20 px-4">
             <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter text-glow mb-8">
-                Staff <span className="text-white">Ice</span><span className="text-ice-glow">MC</span>
+                Staff <span className="text-white">Jade</span><span className="text-jade-glow">MC</span>
             </h1>
-            <p className="text-xl text-ice-light/70 max-w-2xl mx-auto mb-16">
-                Il team che rende possibile l'esperienza su {serverName}. Gentili, professionali e sempre pronti ad aiutarti.
+            <p className="text-xl text-jade-light/70 max-w-2xl mx-auto mb-16">
+                Il team che rende possibile l'esperienza nel network. Gentili, professionali e sempre pronti ad aiutarti.
             </p>
 
             <div className="flex flex-col gap-20">
@@ -53,18 +53,18 @@ const Staff = ({ serverName }) => {
 
                         <div className="flex flex-wrap justify-center gap-8 md:gap-16">
                             {cat.members.map((member) => (
-                                <div key={member.displayName} className="flex flex-col items-center group min-w-[200px] glass-card p-8 border-ice-glow/10 hover:border-ice-glow/30 transition-all duration-500 hover:translate-y-[-5px]">
-                                    <div className="w-20 h-20 rounded-full mb-6 border border-white/10 group-hover:border-ice-glow/50 transition-all flex items-center justify-center overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.3)]">
-                                        <img 
+                                <div key={member.displayName} className="flex flex-col items-center group min-w-[200px] glass-card p-8 border-jade-glow/10 hover:border-jade-glow/30 transition-all duration-500 hover:translate-y-[-5px]">
+                                    <div className="w-20 h-20 rounded-full mb-6 border border-white/10 group-hover:border-jade-glow/50 transition-all flex items-center justify-center overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.3)]">
+                                        <img
                                             src={`https://mc-heads.net/avatar/${member.mcName}/50`}
                                             alt={member.mcName}
                                             className="w-full h-full object-cover"
                                         />
                                     </div>
                                     <span className="text-2xl font-black text-white italic tracking-tight mb-1">{member.displayName}</span>
-                                    <span className="text-sm text-ice-light/60 italic mb-3">{member.mcName}</span>
+                                    <span className="text-sm text-jade-light/60 italic mb-3">{member.mcName}</span>
                                     {member.description && (
-                                        <p className="text-base text-ice-light/40 italic max-w-[180px] leading-relaxed">{member.description}</p>
+                                        <p className="text-base text-jade-light/40 italic max-w-[180px] leading-relaxed">{member.description}</p>
                                     )}
                                 </div>
                             ))}

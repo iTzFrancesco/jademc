@@ -5,8 +5,8 @@ function App() {
   const [copied, setCopied] = useState(false)
   const [mcPlayers, setMcPlayers] = useState(0)
   const [discordOnline, setDiscordOnline] = useState(0)
-  const serverIP = "play.icemc.it"
-  const serverName = "IceMC"
+  const serverIP = "play.jademc.fun"
+  const serverName = "jadeMC"
   const discordInvite = "https://discord.gg/cU6x8t49B3"
   const modesMaxWidth = "34rem"
 
