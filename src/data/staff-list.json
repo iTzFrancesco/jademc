@@ -50,7 +50,13 @@
       "description": ""
     }
   ],
-  "Helper": [],
+  "Helper": [
+    {
+      "displayName": "ADDERALL",
+      "mcName": "Vinx_y",
+      "description": ""
+    }
+  ],
   "Jr. Helper": [
     {
       "displayName": "OᐯEᖇᗪEᗩTᕼ__",
@@ -65,11 +71,6 @@
     {
       "displayName": "Phantom",
       "mcName": "Phantom",
-      "description": ""
-    },
-    {
-      "displayName": "ADDERALL",
-      "mcName": "Vinx_y",
       "description": ""
     }
   ]
