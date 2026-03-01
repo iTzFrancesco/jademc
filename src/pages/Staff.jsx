@@ -15,13 +15,14 @@ const CATEGORY_COLORS = {
     'Jr. Mod': 'text-cyan-500',
     'Helper': 'text-green-500',
     'Jr. Helper': 'text-green-500',
+    'ChatMod': 'text-green-600',
 };
 
 const ORDER = [
     'Owner', 'Manager', 'Sr. Admin', 'Admin',
     'Sr. Developer', 'Developer', 'Jr. Developer',
     'Builder', 'Sr. Mod', 'Mod', 'Jr. Mod',
-    'Helper', 'Jr. Helper'
+    'Helper', 'Jr. Helper', 'ChatMod'
 ];
 
 const Staff = ({ serverName }) => {
