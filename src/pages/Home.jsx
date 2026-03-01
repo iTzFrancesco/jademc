@@ -30,7 +30,7 @@ const Home = ({ serverIP, serverName, mcPlayers, discordOnline, discordInvite, m
                             onClick={copyToClipboard}
                         >
                             <div className="flex flex-col items-start leading-none">
-                                <span className="text-[10px] text-jade-light/40 uppercase font-black tracking-widest mb-1 text-left">Server IP</span>
+                                <span className="text-[10px] text-jade-light/40 uppercase font-black tracking-widest mb-1 text-left">Server IP:</span>
                                 <span className="text-white font-mono text-xl">{serverIP}</span>
                             </div>
                             <div className="ml-2">

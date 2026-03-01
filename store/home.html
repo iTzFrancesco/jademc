@@ -1,0 +1,314 @@
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #051a0a 0%, #041408 45%, #030f06 100%);
+  }
+
+  .col-lg-12,
+  .col-xs-12,
+  .panel,
+  .panel-default {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .panel-body {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .store-wrap {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 56px 20px 40px;
+    text-align: center;
+  }
+
+  .store-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 36px 24px;
+  }
+
+  .store-title {
+    font-size: clamp(30px, 6vw, 52px);
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    text-shadow: 0 0 10px rgba(0, 255, 163, 0.5);
+    margin-bottom: 14px;
+  }
+
+  .store-title .mc {
+    color: #00ffa3;
+  }
+
+  .store-text {
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.65;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .buttons {
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 170px;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    font-weight: 800;
+    text-decoration: none;
+    transition: 0.25s ease;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .btn-mc {
+    color: #00ffa3;
+    background: rgba(0, 255, 163, 0.2);
+    border-color: rgba(0, 255, 163, 0.3);
+  }
+
+  .btn-mc:hover {
+    background: rgba(0, 255, 163, 0.3);
+    box-shadow: 0 0 20px rgba(0, 255, 163, 0.3);
+  }
+
+  .btn-discord {
+    background: #ffd700;
+    color: #0a0a0a;
+  }
+
+  .btn-discord:hover {
+    background: #ffc800;
+  }
+
+
+  .store-note {
+    margin-top: 18px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    letter-spacing: 0.04em;
+  }
+
+  .store-legal {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.62);
+    letter-spacing: 0.03em;
+  }
+
+  .mc-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(1, 10, 5, 0.78);
+    backdrop-filter: blur(4px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    padding: 20px;
+    z-index: 9999;
+  }
+
+  .mc-popup-overlay.show {
+    display: flex;
+  }
+
+  .mc-popup {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 255, 163, 0.35);
+    background: linear-gradient(160deg, rgba(3, 25, 13, 0.96), rgba(4, 18, 10, 0.96));
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 28px rgba(0, 255, 163, 0.18);
+    padding: 16px;
+    animation: popupIn 0.22s ease-out;
+  }
+
+  .mc-popup-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #00ffa3;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .mc-popup-text {
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .mc-ip-box {
+    border: 1px solid rgba(0, 255, 163, 0.3);
+    background: rgba(0, 255, 163, 0.08);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 12px;
+  }
+
+  .mc-popup-actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  .mc-popup-btn {
+    flex: 1;
+    border: 1px solid transparent;
+    border-radius: 9px;
+    padding: 8px 10px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 13px;
+    transition: 0.2s ease;
+  }
+
+  .mc-popup-btn-copy {
+    background: #00ffa3;
+    color: #052015;
+  }
+
+  .mc-popup-btn-copy:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
+
+  .mc-popup-btn-close {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.15);
+  }
+
+  .mc-popup-btn-close:hover {
+    background: rgba(255, 255, 255, 0.14);
+    transform: translateY(-1px);
+  }
+
+  .mc-copy-status {
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+    min-height: 16px;
+    text-align: center;
+  }
+
+  @keyframes popupIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+</style>
+<section class="store-wrap">
+  <div class="store-card">
+    <h1 class="store-title">Store Jade<span class="mc">MC</span></h1>
+    <p class="store-text">
+      Benvenuto nello store ufficiale di JadeMC. Qui puoi supportare il server e la community:
+      ogni acquisto contribuisce al mantenimento del progetto e al miglioramento continuo dell'esperienza di gioco.
+    </p>
+
+    <div class="buttons">
+      <button type="button" id="copy-ip-btn" class="btn btn-mc">Minecraft</button>
+      <a href="https://discord.gg/cU6x8t49B3" class="btn btn-discord" target="_blank"
+        rel="noopener noreferrer">Discord</a>
+      <a href="https://jademc.fun" class="btn btn-mc" target="_blank" rel="noopener noreferrer">Sito</a>
+    </div>
+
+    <p class="store-legal">Non siamo affiliati con Mojang, AB.</p>
+  </div>
+</section>
+<div id="mc-popup-overlay" class="mc-popup-overlay" aria-hidden="true">
+  <div class="mc-popup" role="dialog" aria-modal="true" aria-labelledby="mc-popup-title">
+    <h2 id="mc-popup-title" class="mc-popup-title">IP</h2>
+    <p class="mc-popup-text">Usa questo indirizzo per entrare su JadeMC</p>
+    <div class="mc-ip-box">play.jademc.fun</div>
+    <div class="mc-popup-actions">
+      <button type="button" id="mc-copy-btn" class="mc-popup-btn mc-popup-btn-copy">Copia IP</button>
+      <button type="button" id="mc-close-btn" class="mc-popup-btn mc-popup-btn-close">Chiudi</button>
+    </div>
+    <p id="mc-copy-status" class="mc-copy-status"></p>
+  </div>
+</div>
+<script>
+  (function () {
+    var minecraftBtn = document.getElementById("copy-ip-btn");
+    var popupOverlay = document.getElementById("mc-popup-overlay");
+    var closeBtn = document.getElementById("mc-close-btn");
+    var copyBtn = document.getElementById("mc-copy-btn");
+    var copyStatus = document.getElementById("mc-copy-status");
+    var serverIp = "play.jademc.fun";
+
+    if (!minecraftBtn || !popupOverlay || !closeBtn || !copyBtn || !copyStatus) return;
+
+    minecraftBtn.addEventListener("click", function () {
+      copyStatus.textContent = "";
+      popupOverlay.classList.add("show");
+      popupOverlay.setAttribute("aria-hidden", "false");
+    });
+
+    closeBtn.addEventListener("click", function () {
+      popupOverlay.classList.remove("show");
+      popupOverlay.setAttribute("aria-hidden", "true");
+    });
+
+    popupOverlay.addEventListener("click", function (event) {
+      if (event.target === popupOverlay) {
+        popupOverlay.classList.remove("show");
+        popupOverlay.setAttribute("aria-hidden", "true");
+      }
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape" && popupOverlay.classList.contains("show")) {
+        popupOverlay.classList.remove("show");
+        popupOverlay.setAttribute("aria-hidden", "true");
+      }
+    });
+
+    copyBtn.addEventListener("click", async function () {
+      try {
+        await navigator.clipboard.writeText(serverIp);
+        copyStatus.textContent = "IP copiato negli appunti.";
+      } catch (err) {
+        copyStatus.textContent = "Copia non riuscita. IP: " + serverIp;
+      }
+    });
+  })();
+</script>

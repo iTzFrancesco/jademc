@@ -1,4 +1,22 @@
 [[redirects]]
+  from = "http://jademc.fun/*"
+  to = "https://jademc.fun/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.jademc.fun/*"
+  to = "https://jademc.fun/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.jademc.fun/*"
+  to = "https://jademc.fun/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
