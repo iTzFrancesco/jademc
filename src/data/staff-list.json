@@ -6,11 +6,6 @@
       "description": "Owner & Dev"
     },
     {
-      "displayName": "FrostByte",
-      "mcName": "notfrostbyte17",
-      "description": "Owner & SS Manager"
-    },
-    {
       "displayName": "KernelPanic",
       "mcName": "K3rn3lPanic",
       "description": "Owner & Dev"
@@ -24,13 +19,7 @@
     }
   ],
   "Sr. Admin": [],
-  "Admin": [
-    {
-      "displayName": "Phasmo",
-      "mcName": "GlowingLemur74",
-      "description": ""
-    }
-  ],
+  "Admin": [],
   "Sr. Developer": [],
   "Developer": [],
   "Jr. Developer": [
@@ -42,33 +31,27 @@
   ],
   "Builder": [],
   "Sr. Mod": [],
-  "Mod": [],
-  "Jr. Mod": [
+  "Mod": [
     {
       "displayName": "antiidolo",
       "mcName": "xqpr",
       "description": ""
     }
   ],
-  "Helper": [
-    {
-      "displayName": "ADDERALL",
-      "mcName": "Vinx_y",
-      "description": ""
-    }
-  ],
-  "Jr. Helper": [
+  "Jr. Mod": [
     {
       "displayName": "OᐯEᖇᗪEᗩTᕼ__",
       "mcName": "overdeath__",
       "description": ""
     },
     {
-      "displayName": "Phantom",
-      "mcName": "Phantom",
+      "displayName": "ADDERALL",
+      "mcName": "Vinx_y",
       "description": ""
     }
   ],
+  "Helper": [],
+  "Jr. Helper": [],
   "ChatMod": [
     {
       "displayName": "Z3fun6",
