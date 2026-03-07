@@ -51,7 +51,13 @@
     }
   ],
   "Helper": [],
-  "Jr. Helper": [],
+  "Jr. Helper": [
+    {
+      "displayName": "FauxLizard",
+      "mcName": "FauxLizard_",
+      "description": ""
+    }
+  ],
   "ChatMod": [
     {
       "displayName": "Z3fun6",
